@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose')
-const ejs = require('express');
+const ejs = require('ejs');
 const { stringify } = require('nodemon/lib/utils');
 
 //create server
