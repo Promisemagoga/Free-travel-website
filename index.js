@@ -76,40 +76,40 @@ app.get('/testimonial', (req, res) => {
 //run server
 const port = 6200;
 
-const uri = "mongodb+srv://Promise:mongo2022@cluster0.af7rfrt.mongodb.net/?retryWrites=true&w=majority"
-//connect app to mongodb
+// const uri = "mongodb+srv://Promise:mongo2022@cluster0.af7rfrt.mongodb.net/?retryWrites=true&w=majority"
+// //connect app to mongodb
 
-mongoose
-    .connect(uri)
-    .then((res) => {
-        console.log("DB connection successful")
-    })
-    .catch((err) => {
-        console.log("error connecting", err)
-    });
+// mongoose
+//     .connect(uri)
+//     .then((res) => {
+//         console.log("DB connection successful")
+//     })
+//     .catch((err) => {
+//         console.log("error connecting", err)
+//     });
 
-//define your schema
-const contactSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true
-    },
-    subject: {
-        type: String,
-        required: true
-    },
-    message: {
-        type: String,
-        required: true
-    }
-})
+// //define your schema
+// const contactSchema = new mongoose.Schema({
+//     name: {
+//         type: String,
+//         required: true
+//     },
+//     email: {
+//         type: String,
+//         required: true
+//     },
+//     subject: {
+//         type: String,
+//         required: true
+//     },
+//     message: {
+//         type: String,
+//         required: true
+//     }
+// })
 
 
-const Contact = mongoose.model('Contact', contactSchema)
+//const Contact = mongoose.model('Contact', contactSchema)
 //add it to your model
 
 
