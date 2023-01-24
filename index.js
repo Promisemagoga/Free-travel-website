@@ -11,12 +11,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 //route to home
 app.get('/', (req, res) => {
-    res.render('index.ejs');
+    res.render('views/index.ejs');
 });
 
 //route to about
 app.get('/about', (req, res) => {
-    res.render('about.ejs');
+    res.render('views/about.ejs');
 });
 
 //route to blog
